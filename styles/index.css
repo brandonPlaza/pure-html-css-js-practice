@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
+body {
+    margin: 0;
+    background-color: hsl(272, 23%, 50%);
+}
+
 .kode-mono-text {
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
@@ -33,6 +38,7 @@
 
 .navMain a{
     text-decoration: none;
-    color: black;
+    color: hsl(272, 23%, 50%);
+    font-weight: 600;
 }
 
