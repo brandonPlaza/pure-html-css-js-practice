@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
+:root {
+    --primarycolor: hsl(272, 23%, 50%);
+    --secondarycolor: hsl(0, 0%, 80%);
+}
+
 body {
     margin: 0;
-    background-color: hsl(272, 23%, 50%);
+    background-color: var(--primarycolor);
+}
+
+a {
+    text-decoration: none;
 }
 
 .kode-mono-text {
@@ -19,7 +28,7 @@ body {
     justify-content: space-between;
     
     height: 50px;
-    background-color: #EFEFEF;
+    background-color: var(--secondarycolor);
 }
 
 .navMain h2{
@@ -37,8 +46,47 @@ body {
 }
 
 .navMain a{
-    text-decoration: none;
-    color: hsl(272, 23%, 50%);
+    color: var(--primarycolor);
     font-weight: 600;
+}
+
+.cardHolder{
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0.5rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--secondarycolor);
+
+    border-radius: 1rem;
+    transition: transform .45s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+.card .title{
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--primarycolor);
+}
+
+.card a{
+    text-align: end;
+    font-size: 1.2em;
+    color: var(--primarycolor);
+
 }
 
