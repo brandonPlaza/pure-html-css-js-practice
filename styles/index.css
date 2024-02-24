@@ -64,12 +64,14 @@ a {
     justify-content: space-between;
 
     padding: 0.5rem;
+    margin: 0rem 1rem 0rem 0rem;
+
     width: 15rem;
     height: 15rem;
     background-color: var(--secondarycolor);
 
     border-radius: 1rem;
-    transition: transform .45s ease-in-out;
+    transition: transform .40s ease-in-out;
 }
 
 .card:hover{
@@ -85,8 +87,8 @@ a {
 
 .card a{
     text-align: end;
+    font-weight: 500;
     font-size: 1.2em;
     color: var(--primarycolor);
-
 }
 
