@@ -1,0 +1,44 @@
+:root {
+    --primarycolor: hsl(0, 0%, 13%);
+    --secondarycolor: hsl(0, 0%, 80%);
+}
+
+body, html {
+    background-color: var(--primarycolor);
+    height: 100%;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/man-looking-at-task-board.jpg");
+
+    height: 60%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1{
+    font-size: 3em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.navMain h2 {
+    font-weight: 700;
+    
+}
+
